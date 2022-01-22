@@ -8,7 +8,7 @@ This is only for experienced developers, normal users please wait for the EXE in
 
 ## MSFS
 * Open a terminal / powershell. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
-* Type `python` and enter. If python is not installed, Microsoft Store will open. I recommend using another solution to install python 3
+* Type `python` and enter. If python is not installed, Microsoft Store will open. I recommend using [a different solution](https://stackoverflow.com/a/57421906) to install python 3
 * At the Windows command prompt install Flask: `pip install -U Flask`
 * Install [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect): `pip install SimConnect`
 * Start MSFS, span mid air 1000-5000 ft MSL
