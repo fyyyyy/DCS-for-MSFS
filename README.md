@@ -13,6 +13,7 @@ This is only for experienced developers, normal users please wait for the EXE in
 * Install [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect): `pip install SimConnect`
 * Start MSFS, span mid air 1000-5000 ft MSL
 * Run `python DCS_MSFS_CONNECT.py` in the MSFS folder.
+* IMPORTANT: Set MSFS General Options > Camera > HOME COCKPIT MODE > ON. Otherweise the camera will jitter on rolls
 * Create a new joystick binding to unset all joystick controls. We dont want joystick controls to interfere with MSFS
 * Preferably mute MSFS audio and listen to the sound from DCS
 
