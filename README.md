@@ -6,8 +6,10 @@ This is only for experienced developers, normal users please wait for the EXE in
 # Installation
 
 ## MSFS
-* Open a terminal / powershell. Prefarably a shell that supports color
+* Open a terminal / powershell. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
 * Type "python". If python is not installed, Microsoft Store will open. I recommend using another solution to install python 3
+* At the Windows command prompt install Flask: pip install -U Flask
+* Install Python-SimConnect: pip install SimConnect
 * Start MSFS, span mid air 1000-5000 ft MSL
 * Run `python DCS_MSFS_CONNECT.py` in the MSFS folder.
 * Create a new joystick binding to unset all joystick controls. We dont want joystick controls to interfere with MSFS
