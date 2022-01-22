@@ -29,7 +29,7 @@ This is only for experienced developers, normal users please wait for the EXE in
 
 ## Tested Aircraft
 Tested aircraft combos are
-1. DCS F-18 -> MSFS default F-18
+1. DCS F-18 -> MSFS default F-18 ( The SuperWarrior F-18 Mod has some collision issues)
 2. DCS UH-1 -> MSFS UH-1 Gunship [freeware](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship)
 
 External control surfaces, gear, speedbrakes if available are synchronised. Some cockpit instruments work correctly, some don't.
