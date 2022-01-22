@@ -36,4 +36,6 @@ Tested aircraft combos are
 External control surfaces, gear, speedbrakes if available are synchronised. Some cockpit instruments work correctly, some don't.
 If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
 
+## Takeoff and Landing
 Landing / Takeoff is not possible unless you run `python DCS_MSFS_CONNECT.py DCS` which sets MSFS world position to the same location as DCS.
+Working on a solution...
