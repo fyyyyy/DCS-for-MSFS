@@ -3,6 +3,7 @@ Connecting DCS Flight Model with Microsoft Flight Simulator.
 See [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q)
 
 This is only for developers, normal users please wait for the EXE installer.
+Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Installation
 
