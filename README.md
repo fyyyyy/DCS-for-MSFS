@@ -12,7 +12,7 @@ Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 * Type `python` and enter. If python is not installed, Microsoft Store will open. I recommend using [a different solution](https://stackoverflow.com/a/57421906) to install python 3
 * At the Windows command prompt install Flask: `pip install -U Flask`
 * Install [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect): `pip install SimConnect`
-* Start MSFS, span mid air 1000-5000 ft MSL
+* Start MSFS, span mid air 1000-5000 ft MSL with a similar aircraft that you fly in DCS. But it can also be a totally different aircraft, as it's flight physics are disabled in MSFS.
 * Run `python DCS_MSFS_CONNECT.py` in the MSFS folder.
 * IMPORTANT: Set MSFS General Options > Camera > HOME COCKPIT MODE > ON. Otherweise the camera will jitter on rolls
 * Create a new joystick binding to unset all joystick controls. We dont want joystick controls to interfere with MSFS
