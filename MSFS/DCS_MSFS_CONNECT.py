@@ -106,7 +106,7 @@ def parseData(t):
                 # First Iteration ? Setup offset positions for DCS VS MSFS world coordinates
                 if getattr(t, "first_run", True):
                     t.first_run = False
-                    print(f"\nDCS Aircraft: {aircraftName}. Pilot: {pilotName}" % (aircraftName, pilotName))
+                    print(f"\nDCS Aircraft: {aircraftName}. Pilot: {pilotName}")
                     initialSettings(telemetrics, Offsets, setDcsPosition)
                     if DEBUG:
                         print_debug("OFFSETS:", Offsets)
@@ -119,7 +119,7 @@ def parseData(t):
                 setMechanics(mechanics, aircraftType)
 
         except Exception as e:
-            print(bcolors.WARNING, '\nPausing due to Error: %s' % e, bcolors.ENDC, file=sys.stderr)
+            print(bcolors.WARNING, '\nPausing due to Error:', e, bcolors.ENDC, file=sys.stderr)
             t.do_run = False
             if DEBUG:
                 print_debug("TELE:", telemetrics)
@@ -131,7 +131,7 @@ def keepalive(data, ip):
     printDcsLogo(ip, port)
 
     set_datapoint("SIM_DISABLED", None, True)
-    t = threading.currentThread()
+    t = threading.current_thread()
 
     parseData(t)
 
@@ -179,4 +179,4 @@ try:
 except KeyboardInterrupt:
     if sock:
         sock.close()
-    print(bcolors.WARNING, ' INTERRUPTED!', bcolors.ENDC)
+    print(bcolors.WARNING, 'INTERRUPTED!', bcolors.ENDC)

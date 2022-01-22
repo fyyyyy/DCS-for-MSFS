@@ -71,8 +71,9 @@ def initialSettings(telemetrics, Offsets, setDcsPosition):
     #print(Ms_GndAlt, Ms_GndAlt * TO_FEET, Ms_Alt, Ms_Alt - Ms_GndAlt * TO_FEET, Ms_Elevation)
     print("DCS Map started at Lat: %.4f, Lng: %.4f" % (telemetrics["Lat"], telemetrics["Lng"]))
 
-    # command line argument
+    # command line argument supplied ?
     if setDcsPosition:
+        print("Setting MSFS aircraft to DCS world coordinates and altitude", setDcsPosition)
         Offsets["Lat"] = 0
         Offsets["Lng"] = 0
         Offsets["Alt"] = f18Height
@@ -82,26 +83,31 @@ def initialSettings(telemetrics, Offsets, setDcsPosition):
 
         # Plane could be stuck in ground from last crash. Keep aircraft on runway when DCS on ground
         Ms_GndAlt = get_datapoint("GROUND_ALTITUDE") or 0 # ground height AMSL in m
-        print(Ms_GndAlt, "Ms_GndAlt")
+        print("MSFS Altitude over Ground", Ms_GndAlt)
         Ms_Elevation = f18Height + (Ms_GndAlt * TO_FEET) # equals Ms_Alt
         if Ms_Elevation > 1 and telemetrics["AltGnd"] < f18Height + 1:
             set_datapoint("PLANE_ALTITUDE", None, Ms_Elevation)
-        print("Setting MSFS aircraft to DCS world coordinates and altitude", setDcsPosition)
 
     # Keep MSFS world position
     else:
         Offsets["StartLat"] = get_datapoint("PLANE_LATITUDE")
         Offsets["StartLng"] = get_datapoint("PLANE_LONGITUDE")
+
         if not (Offsets["StartLat"] and Offsets["StartLng"]):
             raise("MSFS coordinates not readable. Crashed?")
+        else:
+            print("Keeping MSFS aircraft coordinates at ", Offsets["StartLat"], Offsets["StartLng"])
+
         Offsets["Lat"] = Offsets["StartLat"] - telemetrics["Lat"]
         Offsets["Lng"] = Offsets["StartLng"] - telemetrics["Lng"]
         Offsets["Alt"] = 0 #StartAlt - telemetrics["Alt"] + f18Height
+
         MagneticHdg = get_datapoint("PLANE_HEADING_DEGREES_MAGNETIC")
+        # keeping MSFS heading causes drift, probably due to magnectic declination. Not supported for now 
         Offsets["Hdg"] = 0 #MagneticHdg - telemetrics["Hdg"]
         TrueHdg = get_datapoint("PLANE_HEADING_DEGREES_TRUE")
         Offsets["Declination"] = TrueHdg - MagneticHdg
-        print("Keeping MSFS aircraft coordinates, altitude and heading at ", Offsets["StartLat"], Offsets["StartLng"])
+
 
 
 
@@ -125,10 +131,6 @@ def setTelemetrics(telemetrics, Offsets, setDcsPosition):
         #print(telemetrics["AltGnd"], NewAlt, Ms_Elevation)
         set_datapoint("PLANE_ALTITUDE", None, NewAlt )
         #set_datapoint("INDICATED_ALTITUDE", None, NewAlt )
-    #else:
-        #print(telemetrics["AltGnd"], NewAlt, Ms_Elevation)
-        #Offsets["Alt"] += .3
-        #set_datapoint("PLANE_ALTITUDE", None, Ms_Alt )
 
     x = telemetrics["Lat"] + Offsets["Lat"]
     y = telemetrics["Lng"] + Offsets["Lng"]
@@ -136,7 +138,8 @@ def setTelemetrics(telemetrics, Offsets, setDcsPosition):
     if setDcsPosition:
         set_datapoint("PLANE_LATITUDE", None, x)
         set_datapoint("PLANE_LONGITUDE", None, y)
-    else: 
+    else:
+        # keeping MSFS heading causes drift, probably due to magnectic declination. Not supported for now 
         #p = rotate_point(Offsets["StartLat"], Offsets["StartLng"], Offsets["Hdg"], x, y)
         #print(p, math.degrees(telemetrics["Hdg"]), math.degrees(Offsets["Hdg"]))
         set_datapoint("PLANE_LATITUDE", None, x)
