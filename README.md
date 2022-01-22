@@ -14,6 +14,7 @@ This is only for experienced developers, normal users please wait for the EXE in
 * Start MSFS, span mid air 1000-5000 ft MSL
 * Run `python DCS_MSFS_CONNECT.py` in the MSFS folder.
 * Create a new joystick binding to unset all joystick controls. We dont want joystick controls to interfere with MSFS
+* Preferably mute MSFS audio and listen to the sound from DCS
 
 ![grafik](https://user-images.githubusercontent.com/3744048/150621920-9eb15a86-a0af-455a-a90a-6f6c51e3e4ac.png)
 
