@@ -1,5 +1,6 @@
 # DCS-for-MSFS
-Connecting DCS Flight Model with Microsoft Flight Simulator
+Connecting DCS Flight Model with Microsoft Flight Simulator.
+See [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q)
 
 This is only for experienced developers, normal users please wait for the EXE installer.
 
