@@ -41,8 +41,9 @@ try:
 except:
     print("Not connected to a network?")
 
-print('\nWaiting for DCS on %s port %s. (Press Ctrl + C to stop)' % (myIp or host, port))
-    
+# print('\nWaiting for DCS on %s port %s. (Press Ctrl + C to stop)' % (myIp or host, port))
+
+print(f'\nWaiting for DCS on {myIp or host} port {port}. (Press Ctrl + C to stop)')
 
 def parseData(t):
 
@@ -105,7 +106,7 @@ def parseData(t):
                 # First Iteration ? Setup offset positions for DCS VS MSFS world coordinates
                 if getattr(t, "first_run", True):
                     t.first_run = False
-                    print("\nDCS Aircraft: %s. Pilot: %s" % (aircraftName, pilotName))
+                    print(f"\nDCS Aircraft: {aircraftName}. Pilot: {pilotName}" % (aircraftName, pilotName))
                     initialSettings(telemetrics, Offsets, setDcsPosition)
                     if DEBUG:
                         print_debug("OFFSETS:", Offsets)

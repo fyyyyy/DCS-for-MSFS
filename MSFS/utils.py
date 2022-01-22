@@ -66,7 +66,7 @@ def set_datapoint(datapoint_name, index=None, value_to_use=None):
 	if sent is True:
 		status = "success"
 	else:
-		status = "Error with sending request: %s" % (datapoint_name)
+		status = (f"Error with sending request: {datapoint_name}")
 		print(bcolors.FAIL, status, bcolors.ENDC)
 	return status
 
@@ -90,7 +90,7 @@ def trigger_event(event_name, value_to_use=None):
 
         status = "success"
     else:
-        status = "Error: %s is not an Event" % (event_name)
+        status = (f"Error: {event_name} is not an Event")
         print(bcolors.FAIL, status, bcolors.ENDC)
     return status
 
