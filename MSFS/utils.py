@@ -21,9 +21,9 @@ def initSimConnect():
                         |
     ____________________|____________________
                    \  |   |  /
-                    `.--=--.'
-                     /`-_-'\\
-                   O'       `O
+                    '.--=--.'
+                     /'-_-'\\
+                   O'       'O
 
             MSFS SimConnect connected !
                 Disabling MSFS input
