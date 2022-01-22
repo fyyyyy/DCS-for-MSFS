@@ -23,3 +23,14 @@ This is only for experienced developers, normal users please wait for the EXE in
 * With the python script running and already connected to SimConnect, start a DCS mission 1000-5000ft MSL. If you want to save render frames in DCS, go to F10 ingame map this will save about 30-50% CPU and GPU
 
 ![grafik](https://user-images.githubusercontent.com/3744048/150621954-1e6c6d76-51f6-4c3e-ba64-5a26ade57e83.png)
+
+
+## Tested Aircraft
+Tested aircraft combos are
+1. DCS F-18 -> MSFS default F-18
+2. DCS UH-1 -> MSFS UH-1 [freeware](https://flightsim.to/file/24881/uh-1h-huey-iroquois-wip)
+
+External control surfaces, gear, speedbrakes if available are synchronised. Some cockpit instruments work correctly, some don't.
+If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
+
+Landing / Takeoff is not possible unless you run `python DCS_MSFS_CONNECT.py DCS` which sets MSFS world position to the same location as DCS.
