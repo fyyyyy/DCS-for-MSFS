@@ -5,6 +5,29 @@ See [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q)
 This version currently is only for developers, normal users please wait for the .EXE installer.
 Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
+# Tested Aircraft
+Tested aircraft combos are
+1. DCS F-18 -> MSFS default F-18 ( The SuperWarrior F-18 Mod has some collision issues)
+2. DCS UH-1 -> MSFS UH-1 Gunship [freeware](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship)
+
+External control surfaces, gear, speedbrakes if available are synchronised. Some cockpit instruments work correctly, some don't.
+If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
+
+ANY other aircraft combo may work out of the box, just special mechanics like i.e. the F-14 sweep wings may not be synched in MSFS.
+
+
+# Takeoff and Landing
+Landing / Takeoff is not possible unless you run `python DCS_MSFS_CONNECT.py DCS` which sets MSFS world position to the same location as DCS.
+This is also ideal for comparing scenery between DCS and MSFS, for example Marinas below:
+![grafik](https://user-images.githubusercontent.com/3744048/150657932-a38929c5-9a64-4694-91e6-93206b53697d.png)
+
+We're working on a solution to allow takeoff and landing even when flying in different world locations in DCS vs MSFS
+
+# VR
+This was tested and works in VR. There is also no reason that it shouldn't as you are running regular MSFS in VR. DCS should be kept on 2D, so you need to bind your important buttons and controls to a HOTAS system. Interacting with VR cockpit buttons in MSFS does not yet have any effect on DCS
+
+
+
 # Installation
 
 ## MSFS
@@ -30,22 +53,4 @@ Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 ![grafik](https://user-images.githubusercontent.com/3744048/150621954-1e6c6d76-51f6-4c3e-ba64-5a26ade57e83.png)
 
-
-## Tested Aircraft
-Tested aircraft combos are
-1. DCS F-18 -> MSFS default F-18 ( The SuperWarrior F-18 Mod has some collision issues)
-2. DCS UH-1 -> MSFS UH-1 Gunship [freeware](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship)
-
-External control surfaces, gear, speedbrakes if available are synchronised. Some cockpit instruments work correctly, some don't.
-If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
-
-## Takeoff and Landing
-Landing / Takeoff is not possible unless you run `python DCS_MSFS_CONNECT.py DCS` which sets MSFS world position to the same location as DCS.
-This is also ideal for comparing scenery between DCS and MSFS, for example Marinas below:
-![grafik](https://user-images.githubusercontent.com/3744048/150657932-a38929c5-9a64-4694-91e6-93206b53697d.png)
-
-We're working on a solution to allow takeoff and landing even when flying in different world locations in DCS vs MSFS
-
-## VR
-This was tested and works in VR. There is also no reason that it shouldn't as you are running regular MSFS in VR. DCS should be kept on 2D, so you need to bind your important buttons and controls to a HOTAS system. Interacting with VR cockpit buttons in MSFS does not yet have any effect on DCS
 
