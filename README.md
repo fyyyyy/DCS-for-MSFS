@@ -17,7 +17,7 @@ If you want to interact with complex systems in the cockpit, do it inside DCS no
 
 
 ## Not Working
-The MSFS H-60 unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
+The MSFS [H-60](https://flightsim.to/file/21192/native-h-60-project-wip) unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
 
 
 # Takeoff and Landing
