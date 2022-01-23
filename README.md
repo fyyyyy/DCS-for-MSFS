@@ -1,15 +1,15 @@
 # DCS-for-MSFS
-Connecting DCS Flight Model with Microsoft Flight Simulator.
+Connecting the DCS Flight Model with Microsoft Flight Simulator.
 See [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q)
 
-This is only for developers, normal users please wait for the EXE installer.
+This version currenly is only for developers, normal users please wait for the .EXE installer.
 Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Installation
 
 ## MSFS
-* Open a terminal / powershell. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
-* Type `python` and enter. If python is not installed, Microsoft Store will open. I recommend using [a different solution](https://stackoverflow.com/a/57421906) to install python 3
+* Open a terminal / powershell window. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
+* Type `python` (or python3 depending on what is currently installed) and enter. If python is not installed, Microsoft Store will open. I recommend using [a different solution](https://stackoverflow.com/a/57421906) to install python 3
 * At the Windows command prompt install Flask: `pip install -U Flask`
 * Install [Python-SimConnect](https://github.com/odwdinc/Python-SimConnect): `pip install SimConnect`
 * Start MSFS, span mid air 1000-5000 ft MSL with a similar aircraft that you fly in DCS. But it can also be a totally different aircraft, as it's flight physics are disabled in MSFS.
