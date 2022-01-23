@@ -39,9 +39,8 @@ try:
     myIp = [l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2] if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)), s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET, socket.SOCK_DGRAM)]][0][1]]) if l][0][0]
     print("Enter this ip address in 'DCS/Scripts/Dcs For Msfs/config.lua' on the DCS computer:", bcolors.BOLD, myIp, bcolors.ENDC)
 except:
-    print("Not connected to a network?")
+    print("Please make sure you are connected to a network before continuing.")
 
-# print('\nWaiting for DCS on %s port %s. (Press Ctrl + C to stop)' % (myIp or host, port))
 
 print(f'\nWaiting for DCS on {myIp or host} port {port}. (Press Ctrl + C to stop)')
 
@@ -97,7 +96,6 @@ def parseData(t):
                 raise ConnectionError("DCS quit")
 
             rows = stringdata.split("\n")
-            #print('rows', rows)
 
             # Telemetry data
             if rows[1]:

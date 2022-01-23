@@ -21,12 +21,12 @@ def initSimConnect():
                         |
     ____________________|____________________
                    \  |   |  /
-                    `.--=--.'
-                     /`-_-'\\
-                   O'       `O
+                    '.--=--.'
+                     /'-_-'\\
+                   O'       'O
 
-            MSFS SimConnect connected !
-                Disabling MSFS input
+            MSFS SimConnect connected!
+                Disabling MSFS input...
     """, bcolors.ENDC)
 
     this.ae = AircraftEvents(this.sm)
