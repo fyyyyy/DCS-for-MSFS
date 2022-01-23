@@ -13,7 +13,7 @@ Tested aircraft combos are
 4. ANY other aircraft combo MAY work out of the box, just special mechanics like i.e. the F-14 sweep wings may not be synched in MSFS.
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
-If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
+If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind them to your HOTAS. Most of the cockpit controls in MSFS are not yet synched to DCS.
 
 
 ## Not Working
