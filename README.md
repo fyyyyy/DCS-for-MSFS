@@ -1,8 +1,6 @@
 # DCS for MSFS
 Bringing the DCS Flight Model to Microsoft Flight Simulator.
 See it in action [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q)
-
-This version currently is only for developers, normal users please wait for the .EXE installer.
 Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Tested Aircraft
@@ -35,6 +33,8 @@ AI aircraft from DCS are not shown in MSFS. Only the player aircraft is synchron
 
 
 # Installation
+
+This version currently is only for developers, normal users please wait for the .EXE installer.
 
 ## MSFS
 * Open a terminal / powershell window. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
