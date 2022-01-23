@@ -7,8 +7,8 @@ Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Tested Aircraft
 Tested aircraft combos are
-1. DCS F-18 -> MSFS default F-18 ( The SuperWarrior F-18 Mod has some collision issues)
-2. DCS UH-1 -> MSFS UH-1 Gunship [freeware](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship)
+1. DCS F-18 -> MSFS Standard F-18 ( The SuperWarrior F-18 Mod does not work well - collision issues )
+2. DCS UH-1 -> MSFS [UH-1 Gunship](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship) free download
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
 If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
