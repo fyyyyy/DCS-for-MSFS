@@ -24,7 +24,7 @@ This is also ideal for comparing scenery between DCS and MSFS, for example Marin
 We're working on a solution to allow takeoff and landing even when flying in different world locations in DCS vs MSFS
 
 # VR
-This was tested and works in VR. There is also no reason that it shouldn't as you are running regular MSFS in VR. DCS should be kept on 2D, so you need to bind your important buttons and controls to a HOTAS system. Interacting with VR cockpit buttons in MSFS does not yet have any effect on DCS
+VR was tested and works. Note, there is no reason that it shouldn't work, as you are running regular MSFS in VR. DCS should run in 2D, so you need to bind your important buttons and controls to a HOTAS system. Interacting with VR cockpit buttons in MSFS does not yet have any effect on DCS
 
 
 
