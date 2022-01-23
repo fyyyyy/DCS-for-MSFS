@@ -5,14 +5,19 @@ See it in action [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_
 Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Tested Aircraft
+## Working
 Tested aircraft combos are
-1. DCS F-18 -> MSFS Standard F-18 ( The SuperWarrior F-18 Mod does not work well - collision issues )
-2. DCS UH-1 -> MSFS [UH-1 Gunship](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship) free download
+1. [DCS F-18](https://www.digitalcombatsimulator.com/en/shop/modules/hornet/) -> MSFS Standard F-18 ( The SuperWarrior F-18 Mod does not work well - collision issues )
+2. [DCS UH-1](https://www.digitalcombatsimulator.com/en/products/helicopters/huey/) -> MSFS [UH-1 Gunship](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship) free download
+3. [Grinnelli F-22](https://fsoutlet.com/f22/) -> MSFS [F22](https://flightsim.to/file/16413/lockheed-martin-f-22a-raptor-top-mach-studios-freeware-edition) free download
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
 If you want to interact with complex systems in the cockpit, do it inside DCS not MSFS. Most of the cockpit controls in MSFS are not yet synched to DCS.
 
 ANY other aircraft combo may work out of the box, just special mechanics like i.e. the F-14 sweep wings may not be synched in MSFS.
+
+## Not Working
+The MSFS H-60 unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
 
 
 # Takeoff and Landing
