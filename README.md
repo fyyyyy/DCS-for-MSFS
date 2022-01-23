@@ -30,7 +30,7 @@ VR was tested and works. Note, there is no reason that it shouldn't work, as you
 When you fire weapons in DCS, they are not yet shown in MSFS. Our goal is to make them visible in MSFS as well, but this requires 3D models, textures and effects to be created.
 
 # AI
-AI aircraft in DCS are not shown in MSFS. Only the player aircraft is synchronised. We plan to extend the capabilities to synch DCS AI aircraft into MSFS. This would allow dogfights inside MSFS as the presentation layer, while all the logic and physics are calculated by DCS.
+AI aircraft from DCS are not shown in MSFS. Only the player aircraft is synchronised. We plan to extend the capabilities to synch DCS AI aircraft into MSFS. This would allow dogfights inside MSFS as the presentation layer, while all the logic and physics are calculated by DCS.
 
 
 
