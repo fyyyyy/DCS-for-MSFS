@@ -26,6 +26,12 @@ We're working on a solution to allow takeoff and landing even when flying in dif
 # VR
 VR was tested and works. Note, there is no reason that it shouldn't work, as you are running regular MSFS in VR. DCS should run in 2D, so you need to bind your important buttons and controls to a HOTAS system. Interacting with VR cockpit buttons in MSFS does not yet have any effect on DCS
 
+# Weapons
+When you fire weapons in DCS, they are not yet shown in MSFS. Our goal is to make them visible in MSFS as well, but this requires 3D models, textures and effects to be created.
+
+# AI
+AI aircraft in DCS are not shown in MSFS. Only the player aircraft is synchronised. We plan to extend the capabilities to synch DCS AI aircraft into MSFS. This would allow dogfights inside MSFS as the presentation layer, while all the logic and physics are calculated by DCS.
+
 
 
 # Installation
