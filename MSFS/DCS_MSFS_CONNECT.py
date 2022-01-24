@@ -6,6 +6,8 @@ import re
 
 from simtalk import *
 from utils import *
+from colorama import init
+init()
 
 aircraftType = 'FIXEDWING'
 aircraftName = bcolors.FAIL + "UNKNOWN. Restart DCS Mission" + bcolors.ENDC
