@@ -109,8 +109,10 @@ function GetTelemetry(rarelyUpdate)
             hook = 1 - MainPanel:get_argument_value(293)
         elseif (string.match(own.Name, 'F-14')) then
             -- we dont have throttle so lets use RPM to fake it
-            leftThrottle = MainPanel:get_argument_value(1057) + 0.1
-            rightThrottle = MainPanel:get_argument_value(1058) + 0.1
+            leftRpm = MainPanel:get_argument_value(1057)
+            rightRpm = MainPanel:get_argument_value(1058)
+            leftThrottle = leftRpm + 0.1
+            rightThrottle = rightRpm + 0.1
             hook = 1 - MainPanel:get_argument_value(238)
         end
 
