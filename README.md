@@ -19,7 +19,7 @@ If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind the
 
 ## Not Working
 The MSFS [H-60](https://flightsim.to/file/21192/native-h-60-project-wip) unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
-
+The SuperWarrior F-18 Mod does not work well due to collision issues. Use the standard MSFS F-18 instead.
 
 # Takeoff and Landing
 Landing / Takeoff is not possible unless you run `python DCS_MSFS_CONNECT.py DCS` which sets MSFS world position to the same location as DCS.
