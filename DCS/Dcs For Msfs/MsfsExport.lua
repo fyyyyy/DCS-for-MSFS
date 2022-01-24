@@ -108,11 +108,11 @@ function GetTelemetry(rarelyUpdate)
             -- 293 = Hook retracted
             hook = 1 - MainPanel:get_argument_value(293)
         elseif (string.match(own.Name, 'F-14')) then
-            -- we dont have throttle so lets use RPM to fake it
+            -- see Mods\aircraft\F14\Cockpit\draw_args.lua
             leftRpm = MainPanel:get_argument_value(1057)
             rightRpm = MainPanel:get_argument_value(1058)
-            leftThrottle = leftRpm + 0.1
-            rightThrottle = rightRpm + 0.1
+            leftThrottle = MainPanel:get_argument_value(753)
+            rightThrottle = MainPanel:get_argument_value(752)
             hook = 1 - MainPanel:get_argument_value(238)
         end
 
