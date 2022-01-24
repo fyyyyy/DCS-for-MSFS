@@ -10,7 +10,7 @@ Tested aircraft combos are
 1. [DCS F-18](https://www.digitalcombatsimulator.com/en/shop/modules/hornet/) -> MSFS Standard F-18 ( The SuperWarrior F-18 Mod does not work well - collision issues )
 2. [DCS UH-1](https://www.digitalcombatsimulator.com/en/products/helicopters/huey/) -> MSFS [UH-1 Gunship](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship) free download
 3. [Grinnelli F-22](https://fsoutlet.com/f22/) -> MSFS [F22](https://flightsim.to/file/16413/lockheed-martin-f-22a-raptor-top-mach-studios-freeware-edition) free download
-4. [Heatblur F-14](https://store.heatblur.com/products/test-product) -> [DCdesigns F-14](https://www.justflight.com/product/dc-designs-f14-a-b-tomcat-microsoft-flight-simulator)  ( wing sweep and tail hook not synched on external model. wing sweep is controlled by MSFS logic and rouhly the same as DCS)
+4. [Heatblur F-14](https://store.heatblur.com/products/test-product) -> [DCdesigns F-14](https://www.justflight.com/product/dc-designs-f14-a-b-tomcat-microsoft-flight-simulator)  ( wing sweep and tail hook not synched on external model. wing sweep is controlled by MSFS logic and roughly the same as DCS)
 5. ANY other aircraft combo MAY work out of the box, just special mechanics unique to the aircraft may not be synched in MSFS.
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
