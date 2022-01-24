@@ -14,8 +14,7 @@ Tested aircraft combos are
 5. ANY other aircraft combo MAY work out of the box, just special mechanics unique to the aircraft may not be synched in MSFS.
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
-If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind them to your HOTAS. Most of the cockpit controls in MSFS are not yet synched to DCS.
-
+If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind them to your HOTAS. Most of the cockpit controls in MSFS are not yet synched to DCS. So the aircraft you select in MSFS doesn't matter, as long as you like the exterior and cockpit model. It's purely cosmetic.
 
 ## Not Working
 * The MSFS [H-60](https://flightsim.to/file/21192/native-h-60-project-wip) Mod unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
