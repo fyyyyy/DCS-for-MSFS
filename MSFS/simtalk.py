@@ -12,6 +12,7 @@ def setMechanics(mechanics, aircraftType):
         set_datapoint("GEAR_CENTER_POSITION", None, mechanics["Gear"])
         set_datapoint("GEAR_RIGHT_POSITION", None, mechanics["Gear"])
         set_datapoint("GEAR_LEFT_POSITION", None, mechanics["Gear"])
+        #set_datapoint("TAILHOOK_POSITION", None, mechanics["Hook"])
         trigger_event("SET_TAIL_HOOK_HANDLE", mechanics["Hook"])
 
     Fuel = 1
