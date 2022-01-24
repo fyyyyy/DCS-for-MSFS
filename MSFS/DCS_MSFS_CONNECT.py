@@ -7,7 +7,7 @@ import re
 from simtalk import *
 from utils import *
 
-aircraftType = 'HELI'
+aircraftType = 'FIXEDWING'
 aircraftName = bcolors.FAIL + "UNKNOWN. Restart DCS Mission" + bcolors.ENDC
 pilotName = bcolors.FAIL + "UNKNOWN. Restart DCS Mission" + bcolors.ENDC
 
@@ -74,6 +74,8 @@ def parseData(t):
         "Hook": 0,
         "LeftThrottle": 0,
         "RightThrottle": 0,
+        "LeftRpm": 0,
+        "RightRpm": 0,
         "ElevatorLeft": 0,
         "ElevatorRight": 0,
         "RudderLeft": 0,
@@ -157,8 +159,9 @@ try:
                     aircraftName = fields[1]
                     pilotName = fields[2]
                     
-                    if (aircraftName == 'UH-1H'): aircraftType = 'HELI'
-                    if (aircraftName == 'FA-18C_hornet'): aircraftType = 'FIXEDWING'
+                    if ('UH-1' in aircraftName): aircraftType = 'HELI'
+                    if ('FA-1' in aircraftName): aircraftType = 'FIXEDWING'
+                    if ('F-1' in aircraftName): aircraftType = 'FIXEDWING'
                     print (bcolors.OKBLUE, "\nHello", pilotName, "Aircraft:", aircraftName, "Type:", aircraftType, "! DCS is loading...", bcolors.ENDC)
                     data = addr = 0
                 elif stringData == "EXIT_DCS":

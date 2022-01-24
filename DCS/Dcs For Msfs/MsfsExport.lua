@@ -92,24 +92,38 @@ function GetTelemetry(rarelyUpdate)
     if rarelyUpdate then
             
         local MainPanel = GetDevice(0)
-        
-        -- F-18 specific, does NOT work in external view
-        -- See DCS World\Mods\aircraft\FA-18C\Cockpit\Scripts\mainpanel_init.lua
-        -- 104 = Left Engine Throttle
-        local F18_leftThrottle = MainPanel:get_argument_value(104)
-        -- 105 = Right Engine Throttle
-        local F18_rightThrottle = MainPanel:get_argument_value(105)
-        -- 293 = Hook retracted
-        local F18_hook = 1 - MainPanel:get_argument_value(293)
+        local leftThrottle = 0
+        local rightThrottle = 0
+        local leftRpm = 0
+        local rightRpm = 0
+        local hook = 0
+
+        if (own.Name == 'FA-18C_hornet') then
+            -- F-18 specific, does NOT work in external view
+            -- See DCS World\Mods\aircraft\FA-18C\Cockpit\Scripts\mainpanel_init.lua
+            -- 104 = Left Engine Throttle
+            leftThrottle = MainPanel:get_argument_value(104)
+            -- 105 = Right Engine Throttle
+            rightThrottle = MainPanel:get_argument_value(105)
+            -- 293 = Hook retracted
+            hook = 1 - MainPanel:get_argument_value(293)
+        elseif (string.match(own.Name, 'F-14')) then
+            -- we dont have throttle so lets use RPM to fake it
+            leftThrottle = MainPanel:get_argument_value(1057) + 0.1
+            rightThrottle = MainPanel:get_argument_value(1058) + 0.1
+            hook = 1 - MainPanel:get_argument_value(238)
+        end
 
         local mechanics = {}
         mechanics[#mechanics+1] = string.format( "%.2f", mech.gear.value )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.flaps.value )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.refuelingboom.value )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.speedbrakes.value )
-        mechanics[#mechanics+1] = string.format( "%.2f", F18_hook )
-        mechanics[#mechanics+1] = string.format( "%.2f", F18_leftThrottle )
-        mechanics[#mechanics+1] = string.format( "%.2f", F18_rightThrottle )
+        mechanics[#mechanics+1] = string.format( "%.2f", hook )
+        mechanics[#mechanics+1] = string.format( "%.2f", leftThrottle )
+        mechanics[#mechanics+1] = string.format( "%.2f", rightThrottle )
+        mechanics[#mechanics+1] = string.format( "%.2f", leftRpm )
+        mechanics[#mechanics+1] = string.format( "%.2f", rightRpm )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.controlsurfaces.elevator.left )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.controlsurfaces.elevator.right )
         mechanics[#mechanics+1] = string.format( "%.2f", mech.controlsurfaces.rudder.left )
