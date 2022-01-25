@@ -42,6 +42,14 @@ AI aircraft from DCS are not shown in MSFS. Only the player aircraft is synchron
 
 This version currently is only for developers, normal users please wait for the .EXE installer.
 
+## Script
+This is just to download, not install.
+
+```shell
+curl https://raw.githubusercontent.com/fyyyyy/DCS-/master/install.sh | bash
+```
+
+
 ## MSFS
 * Open a terminal / powershell window. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
 * Type `python` (or python3 depending on what is currently installed) and enter. If python is not installed, Microsoft Store will open. I recommend using [a different solution](https://stackoverflow.com/a/57421906) to install python 3
