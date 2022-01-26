@@ -15,7 +15,7 @@ def initSimConnect():
     except Exception as e:
         print(bcolors.FAIL, 'Error: MSFS not running on this machine or pyton SimConnect not installed?\n%s' %
               e, bcolors.ENDC, file=sys.stderr)
-        exit()
+        sys.exit()
 
     print(bcolors.OKGREEN,"""
                         |

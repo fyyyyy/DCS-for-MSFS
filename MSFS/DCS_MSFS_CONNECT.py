@@ -7,6 +7,7 @@ import re
 from simtalk import *
 from utils import *
 from colorama import init
+VERSION = 0.1
 init()
 
 aircraftType = 'FIXEDWING'
@@ -15,6 +16,8 @@ pilotName = bcolors.FAIL + "UNKNOWN. Restart DCS Mission" + bcolors.ENDC
 
 setDcsPosition = False
 DEBUG = True
+
+print("Version", VERSION)
 
 try:
     # command line arg supplied ?
