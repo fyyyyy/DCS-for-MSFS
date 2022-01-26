@@ -40,7 +40,7 @@ AI aircraft from DCS are not shown in MSFS. Only the player aircraft is synchron
 
 # Installation
 
-The version on GitHub is only for developers, normal users please go to [this link](https://github.com/fyyyyy/DCS-for-MSFS) for an exe installer.
+The version on GitHub is only for developers, normal users please go to [this link](https://fryyy.itch.io/dcs-for-msfs) for an exe installer.
 
 ## Script
 This is just to download, not install.
