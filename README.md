@@ -10,15 +10,14 @@ Tested aircraft combos are
 1. [DCS F-18](https://www.digitalcombatsimulator.com/en/shop/modules/hornet/) -> MSFS Standard F-18 ( The SuperWarrior F-18 Mod does not work well - collision issues )
 2. [DCS UH-1](https://www.digitalcombatsimulator.com/en/products/helicopters/huey/) -> MSFS [UH-1 Gunship](https://fr.flightsim.to/file/24313/uh-1c-huey-gunship) free download
 3. [Grinnelli F-22](https://fsoutlet.com/f22/) -> MSFS [F22](https://flightsim.to/file/16413/lockheed-martin-f-22a-raptor-top-mach-studios-freeware-edition) free download
-4. [Heatblur F-14](https://store.heatblur.com/products/test-product) -> [DCdesigns F-14](https://www.justflight.com/product/dc-designs-f14-a-b-tomcat-microsoft-flight-simulator)  ( wing sweep and tail hook not synched on external model)
+4. [Heatblur F-14](https://store.heatblur.com/products/test-product) -> [DCdesigns F-14](https://www.justflight.com/product/dc-designs-f14-a-b-tomcat-microsoft-flight-simulator)  ( wing sweep and tail hook not synched on external model. wing sweep is controlled by MSFS logic and roughly the same as DCS)
 5. ANY other aircraft combo MAY work out of the box, just special mechanics unique to the aircraft may not be synched in MSFS.
 
 External control surfaces, gear, speedbrakes if available are synchronised. Most avionics instruments work in MSFS correctly, other instruments like engines, hydraulics etc probably dont work yet.
-If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind them to your HOTAS. Most of the cockpit controls in MSFS are not yet synched to DCS.
-
+If you want click buttons in the cockpit, do it inside DCS not MSFS. Or bind them to your HOTAS. Most of the cockpit controls in MSFS are not yet synched to DCS. So the aircraft you select in MSFS doesn't matter, as long as you like the exterior and cockpit model. It's purely cosmetic.
 
 ## Not Working
-* The MSFS [H-60](https://flightsim.to/file/21192/native-h-60-project-wip) unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
+* The MSFS [H-60](https://flightsim.to/file/21192/native-h-60-project-wip) Mod unfortunately does not work yet, leading to a crash of MSFS. Developers were contacted.
 * The SuperWarrior F-18 Mod does not work well due to collision issues. Use the standard MSFS F-18 instead.
 
 # Takeoff and Landing
@@ -42,6 +41,14 @@ AI aircraft from DCS are not shown in MSFS. Only the player aircraft is synchron
 # Installation
 
 This version currently is only for developers, normal users please wait for the .EXE installer.
+
+## Script
+This is just to download, not install.
+
+```shell
+curl https://raw.githubusercontent.com/fyyyyy/DCS-/master/install.sh | bash
+```
+
 
 ## MSFS
 * Open a terminal / powershell window. Prefarably a shell that supports color (you can get one of those by going to the start menu and typing "cmd" or PowerShell) 
