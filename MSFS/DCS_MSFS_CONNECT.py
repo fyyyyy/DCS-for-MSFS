@@ -163,9 +163,19 @@ try:
                     pilotName = fields[2]
                     
                     if ('UH-1' in aircraftName): aircraftType = 'HELI'
-                    if ('FA-1' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('FA-1' in aircraftName): aircraftType = 'FIXEDWING'
                     # Allows other aircraft than aircraft with F-1 in their name like the F-22, F-35, A-4, F-5, etc
-                    if ('F-1' or 'F1' or 'F-2' or 'F2' or 'F-3' or 'F3' or 'F-4' or 'F-5' or 'A-4' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F-1' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F1' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F-2' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F2' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F-3' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F3' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F-4' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F4' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F-5' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('F5' in aircraftName): aircraftType = 'FIXEDWING'
+                    elif ('A-4' in aircraftName): aircraftType = 'FIXEDWING' 
                     print (bcolors.OKBLUE, "\nHello", pilotName, "Aircraft:", aircraftName, "Type:", aircraftType, "! DCS is loading...", bcolors.ENDC)
                     data = addr = 0
                 elif stringData == "EXIT_DCS":
