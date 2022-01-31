@@ -1,7 +1,10 @@
 # DCS for MSFS
 Bringing the DCS Flight Model to Microsoft Flight Simulator.
+
 See it in action [on youtube](https://www.youtube.com/channel/UCZobogo5kNABPsUp_W4tU0Q).
-Please see [installation options](#installation).
+
+See [installation options](#installation).
+
 Join the [DISCORD](https://discord.gg/j9WuCrsY8y)
 
 # Tested Aircraft
