@@ -50,7 +50,7 @@ Regular users please go to [itch.io](https://fryyy.itch.io/dcs-for-msfs) to down
 This is just to download, not install.
 
 ```shell
-curl https://raw.githubusercontent.com/fyyyyy/DCS-/master/install.sh | bash
+curl https://raw.githubusercontent.com/fyyyyy/DCS-for-MSFS/master/install.sh | bash
 ```
 
 
